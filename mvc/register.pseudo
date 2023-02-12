@@ -1,4 +1,10 @@
 // get registration information from the user
+//the view should not send to the model - should not update the model from the view 
+
+
+//the controller process the user requests 
+//based on the user request, the controller calls methods in the view and model to accomplish the requested action 
+
 $username = $_POST['username'];
 $pw1 = $_POST['password1'];
 $pw2 = $_POST['password2'];
