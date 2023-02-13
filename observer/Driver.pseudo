@@ -1,28 +1,55 @@
-/** CHANGE: created button  **/
+/** CHANGE: created buttons and  button class taht would allow for implementation of the obeserver pattern so that light objects can be notified whne the button object is pressed   **/
 
 public class Driver {
 	
 	public main(){
 
 	// create a button
-    JFrame f=new JFrame("Button A");  
-    JButton b=new JButton(" Button ");  
-    
-    b.addActionListener(new ActionListener(){  
-public void actionPerformed(ActionEvent e){  
-            tf.setText("Welcome to Javatpoint.");  
-        }  
+Button.java
+
+import java.util.ArrayList;
+import java.util.List;
+
+	public class Button {
+	private List<Light> lights = new ArrayList<Light>();
+
+	public void press() {
+	for (Light light : lights) {
+	light.turnOn();
+	}
+	}
+
+	public void addLight(Light light) {
+	lights.add(light);
+	}
+	}
+
+	Driver.java
+
+	public class Driver {
+	public static void main(String[] args) {
+	Button button = new Button();
+
+
 
 
 	// create a red light
+	Light redLight = new Light("Red");
 
 	// create a green light
+	Light greenLight = new Light("Green");
 
 	// create a blue light
+	Light blueLight = new Light("Blue");
 
 	// have the blue light and the red light listen for the button
+	button.addLight(blueLight);
+	button.addLight(redLight);
+	
 
 	// press the button. Blue and red light should call turnOn in response
+	button.press();
+	
 	// NOTE: your Button class should be generic - do not hard-code these 
 	// lights into the Button class.
 
