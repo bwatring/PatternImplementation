@@ -1,11 +1,24 @@
+/** CHANGE: added private static SingletonLogger instance and pulic logger constructor  so we can use the singleton loger class in any class by calling the singletonloggergetstance and get logger. ensuring only one instance of loger is created and all of the classes are using the same instance **/
+
 public class Logger {
 	private String log;
+	private static SingletonLogger instance;
+	
+	
 	// Constructor
 	public Logger(){
+	logger = Logger.getLogger("SingletonLongger");
+	}
+	
+	public static SingletonLogger getInstance() {
+	if (instance = null ) {
+	instance = new Singletonlogger();
+	}
+	return instance;
 	}
 
 	// Log something
-	public info(String information){
-		this.log.append(information);
+	public Logger getLogger 
+	return logger; 
 	}
 }
