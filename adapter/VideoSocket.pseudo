@@ -1,3 +1,6 @@
+/** CHANGE: modified class so it uses the HDMIPlug **/
+/** CHANGE: Bc now when we will run main method of videosocket class is is going to use the digital display of hdmi plug through the adapter  **/
+
 //  Modify this class so it uses the HDMIPlug's 
 // digitalDisplay() implementation. Note that you 
 // still must use a VidePlug (i.e., don't just replace
@@ -7,8 +10,7 @@ public class VideoSocket {
 
 	public main(){
 		// plug MUST be of type VideoPlug
-		VideoPlug plug = new VGAPlug();
-
+    		VideoPlug plug = new HDMIAdapter(new HDMIPlug());
 		// call plug.display() 
 		plug.display(1024, 768);
 
