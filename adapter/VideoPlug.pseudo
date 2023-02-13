@@ -1,5 +1,5 @@
-/** CHANGE:  **/
+/** CHANGE: added digital image to print statement display because it was originally just printing the width and height **/
 public interface VideoPlug {
 
-	public display(int width, int height);
+	public display(int width, int height + digital image);
 }
