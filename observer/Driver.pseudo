@@ -1,8 +1,18 @@
+/** CHANGE: created button  **/
+
 public class Driver {
 	
 	public main(){
 
 	// create a button
+    JFrame f=new JFrame("Button A");  
+    JButton b=new JButton(" Button ");  
+    
+    b.addActionListener(new ActionListener(){  
+public void actionPerformed(ActionEvent e){  
+            tf.setText("Welcome to Javatpoint.");  
+        }  
+
 
 	// create a red light
 
