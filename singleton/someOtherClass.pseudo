@@ -1,4 +1,6 @@
+/** CHANGE: added private logger so it has its own reference to the same logger instance ensuring only one instance of logger is created and all classes use the same instance **/
 public SomeOtherClass{
+private Logger logger = SingletonLogger.getInstance().getLogger();
 
 	public main(){
 		Logger l = new Logger();
