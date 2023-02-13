@@ -1,3 +1,5 @@
+/** CHANGE: XXX **/
+
 public class HDMIAdapter implements VideoPlug {
   private HDMIPlug hdmiPlug;
   
