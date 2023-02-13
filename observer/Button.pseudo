@@ -1,6 +1,15 @@
+/** CHANGE: added a addLights function and edited logic within press functionality that also allowed for communication between lights and turning them on  **/
 public class Button {
 
 	public void press() {
+	for (Light light : lights) {
+	light.turnOn();
 		
 	}
 }
+	public void addLight(Light light) {
+	lights.add(light);
+	}
+}
+
+
