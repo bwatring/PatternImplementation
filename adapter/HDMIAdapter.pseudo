@@ -1,4 +1,4 @@
-/** CHANGE: XXX **/
+/** CHANGE: modiefied and created necessary classes so VideoSocket class uses HDMIRPlugs digitalDisplay implement and not VGAs display method when it calls video plugs display, needed to use an implementation of the video plug interfacte  **/
 
 public class HDMIAdapter implements VideoPlug {
   private HDMIPlug hdmiPlug;
