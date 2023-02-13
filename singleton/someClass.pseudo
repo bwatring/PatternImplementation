@@ -1,4 +1,7 @@
+/** CHANGE: XXX **/
+
 public SomeClass{
+private Logger logger = SingletonLogger.getInstance().getLogger();
 
 	public main(){
 		Logger l = new Logger();
