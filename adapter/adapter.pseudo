@@ -1,0 +1,9 @@
+public class Adapter implements VideoPlug {
+private HDMIPlug hdmiPlug;
+}
+public display(int width, int height) { 
+this.hdmiPlug.width = width;
+this.hdmiPlug.height = height;
+this.hdmiPlug.digitalDisplay();
+}
+}
